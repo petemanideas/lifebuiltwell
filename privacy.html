@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- File: privacy.html -->
 <!doctype html>
 <html lang="en">
@@ -151,3 +152,158 @@
   </script>
 </body>
 </html>
+=======
+<!-- File: privacy.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy | LifeBuiltWell</title>
+  <meta name="description" content="Privacy Policy for LifeBuiltWell." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a class="brand-link" href="index.html" aria-label="LifeBuiltWell home">
+          <span class="brand-mark" aria-hidden="true">LBW</span>
+          <span class="brand-name">LifeBuiltWell</span>
+        </a>
+        <p class="brand-tagline">Eat well. Move with purpose. Live grounded.</p>
+      </div>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="primary-nav" class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="eat-well.html">Eat Well</a>
+        <a href="move-well.html">Move Well</a>
+        <a href="live-grounded.html">Live Grounded</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Privacy Policy</h1>
+          <p class="lead">
+            This is a simple placeholder privacy policy you can customise. It explains what data is collected and how it may be used.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="index.html">Back to home</a>
+            <a class="btn btn-ghost" href="contact.html">Contact</a>
+          </div>
+          <p class="fineprint">Last updated: <strong>February 2026</strong> (edit this as needed).</p>
+        </div>
+
+        <div class="hero-card" role="note" aria-label="Privacy summary">
+          <h2 class="h4">In short</h2>
+          <ul class="checklist">
+            <li>We may use basic analytics to understand traffic</li>
+            <li>Ads/affiliates may set cookies (if used)</li>
+            <li>You can contact us to request removal of messages you send</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <h2>1. Who we are</h2>
+          <p class="muted">
+            LifeBuiltWell (“we”, “us”, “our”) operates this website. This policy explains how we collect, use, and protect your information.
+          </p>
+
+          <h2>2. Information we collect</h2>
+          <ul class="bullets">
+            <li><strong>Contact information</strong> (if you email us): your name, email address, and message content.</li>
+            <li><strong>Usage data</strong>: pages visited, approximate location (e.g., country/city), device type, and browser type.</li>
+            <li><strong>Cookies</strong>: small files that help websites function and (optionally) measure performance.</li>
+          </ul>
+
+          <h2>3. How we use information</h2>
+          <ul class="bullets">
+            <li>To respond to messages you send via email or contact forms.</li>
+            <li>To understand which pages are helpful and improve the site.</li>
+            <li>To maintain security and prevent abuse.</li>
+          </ul>
+
+          <h2>4. Analytics</h2>
+          <p class="muted">
+            We may use analytics tools (such as Google Analytics or similar) to understand site performance. Analytics tools may use cookies.
+            If you do not want cookies, you can disable them in your browser settings.
+          </p>
+
+          <h2>5. Advertising and affiliate links</h2>
+          <p class="muted">
+            In the future, this site may use advertising networks (e.g., Google AdSense) and/or affiliate links. These services may set cookies
+            or collect information to provide relevant ads and track commissions. We will always aim to recommend products responsibly.
+          </p>
+
+          <h2>6. Sharing your information</h2>
+          <p class="muted">
+            We do not sell your personal information. We may share data with service providers that help run the site (hosting, analytics, email),
+            only as needed to operate the site.
+          </p>
+
+          <h2>7. Data security</h2>
+          <p class="muted">
+            We take reasonable steps to protect your information. However, no method of transmission over the internet is 100% secure.
+          </p>
+
+          <h2>8. Your choices</h2>
+          <ul class="bullets">
+            <li>You can disable cookies in your browser.</li>
+            <li>You can contact us to request deletion of emails/messages you’ve sent.</li>
+          </ul>
+
+          <h2>9. Contact</h2>
+          <p class="muted">
+            If you have questions about this policy, please contact us via the Contact page.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-title">LifeBuiltWell</p>
+      <p class="muted">Foundations for a steady life: food, movement, and faith.</p>
+
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <p class="tiny">© <span id="year"></span> LifeBuiltWell. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('#primary-nav');
+    btn?.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('is-open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+>>>>>>> 495fd820a55ca41e105e9085ccb26f752e054ef6

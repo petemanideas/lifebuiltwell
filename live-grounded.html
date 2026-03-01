@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- File: live-grounded.html -->
 <!doctype html>
 <html lang="en">
@@ -119,3 +120,126 @@
   </script>
 </body>
 </html>
+=======
+<!-- File: live-grounded.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Live Grounded | LifeBuiltWell</title>
+  <meta name="description" content="Live Grounded: faith as the cornerstone, with steady rhythms for a grounded life." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a class="brand-link" href="index.html" aria-label="LifeBuiltWell home">
+          <span class="brand-mark" aria-hidden="true">LBW</span>
+          <span class="brand-name">LifeBuiltWell</span>
+        </a>
+        <p class="brand-tagline">Eat well. Move with purpose. Live grounded.</p>
+      </div>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="primary-nav" class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="eat-well.html">Eat Well</a>
+        <a href="move-well.html">Move Well</a>
+        <a href="live-grounded.html" aria-current="page">Live Grounded</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Live Grounded</h1>
+          <p class="lead">
+            A grounded life has roots. Faith as the cornerstone, with simple daily rhythms for a steady mind and spirit.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="index.html#start-here">Start here</a>
+            <a class="btn btn-ghost" href="index.html#foundations">Back to the 3 foundations</a>
+          </div>
+          <p class="fineprint">
+            This page is written to be welcoming and practical, while staying true to my Christian faith.
+          </p>
+        </div>
+
+        <div class="hero-card" role="note" aria-label="Live grounded summary">
+          <h2 class="h4">Simple daily rhythms</h2>
+          <ul class="checklist">
+            <li><strong>Stillness</strong> — prayer / reflection</li>
+            <li><strong>Gratitude</strong> — notice what’s good</li>
+            <li><strong>Discipline</strong> — small habits kept</li>
+            <li><strong>Rest</strong> — recovery and renewal</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Coming soon</h2>
+          <p class="muted">Short reflections that strengthen the foundations.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>Faith and the body</h3>
+            <p>Seeing health as stewardship, not vanity.</p>
+          </article>
+          <article class="card">
+            <h3>Rest and discipline</h3>
+            <p>Why rest is not laziness, and discipline is not punishment.</p>
+          </article>
+          <article class="card">
+            <h3>Rhythms that last</h3>
+            <p>Simple routines that keep life steady under pressure.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-title">LifeBuiltWell</p>
+      <p class="muted">Foundations for a steady life: food, movement, and faith.</p>
+
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <p class="tiny">© <span id="year"></span> LifeBuiltWell. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('#primary-nav');
+    btn?.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('is-open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+>>>>>>> 495fd820a55ca41e105e9085ccb26f752e054ef6
