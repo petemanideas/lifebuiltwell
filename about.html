@@ -1,0 +1,149 @@
+<!-- File: about.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | LifeBuiltWell</title>
+  <meta name="description" content="About LifeBuiltWell: why this site exists and the three foundations it is built on." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a class="brand-link" href="index.html" aria-label="LifeBuiltWell home">
+          <span class="brand-mark" aria-hidden="true">LBW</span>
+          <span class="brand-name">LifeBuiltWell</span>
+        </a>
+        <p class="brand-tagline">Eat well. Move with purpose. Live grounded.</p>
+      </div>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="primary-nav" class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="eat-well.html">Eat Well</a>
+        <a href="move-well.html">Move Well</a>
+        <a href="live-grounded.html">Live Grounded</a>
+        <a href="about.html" aria-current="page">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>About LifeBuiltWell</h1>
+          <p class="lead">
+            This site is a simple wellbeing framework built on three foundations: eating well, moving with purpose,
+            and living grounded — with faith in God as the cornerstone.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="index.html#start-here">Start here</a>
+            <a class="btn btn-ghost" href="index.html">Back to home</a>
+          </div>
+        </div>
+
+        <div class="hero-card" role="note" aria-label="About summary">
+          <h2 class="h4">What you’ll find here</h2>
+          <ul class="checklist">
+            <li>Real meals (with photos)</li>
+            <li>Functional routines for balance & strength</li>
+            <li>Faith-based reflections that keep life steady</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Why I made this</h2>
+          <p class="muted">A short, honest explanation you can edit anytime.</p>
+        </div>
+
+        <div class="split">
+          <div>
+            <p>
+              I’m building LifeBuiltWell because I genuinely believe people thrive when they focus on foundations:
+              nourishing food, movement that improves body function, and a life grounded in faith and purpose.
+            </p>
+            <p>
+              I’m not here to push extremes. I’m interested in steady habits that help you feel good, move better,
+              and show up well in everyday life.
+            </p>
+            <p class="muted">
+              Note: Nothing on this site is medical advice. If you have specific health concerns, please talk to a qualified professional.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Guiding principles</h3>
+            <ul class="bullets">
+              <li><strong>Simple</strong> habits, repeated</li>
+              <li><strong>Function</strong> over appearances</li>
+              <li><strong>Consistency</strong> over perfection</li>
+              <li><strong>Faith</strong> as the cornerstone</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section-head" style="margin-top:28px;">
+          <h2>What’s next</h2>
+          <p class="muted">Tools that make consistency measurable (without guilt).</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>Consistency Tracker</h3>
+            <p>A simple daily/weekly tracker across the three foundations.</p>
+          </article>
+          <article class="card">
+            <h3>Movement Rhythm Builder</h3>
+            <p>A weekly movement rhythm focused on balance, strength, and mobility.</p>
+          </article>
+          <article class="card">
+            <h3>Simple Meal Builder</h3>
+            <p>A balanced plate builder with simple choices and examples.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-title">LifeBuiltWell</p>
+      <p class="muted">Foundations for a steady life: food, movement, and faith.</p>
+
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <p class="tiny">© <span id="year"></span> LifeBuiltWell. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('#primary-nav');
+    btn?.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('is-open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

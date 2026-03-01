@@ -1,0 +1,123 @@
+w<!-- File: eat-well.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eat Well | LifeBuiltWell</title>
+  <meta name="description" content="Eat Well: simple, nourishing meals that support steady energy and consistency." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a class="brand-link" href="index.html" aria-label="LifeBuiltWell home">
+          <span class="brand-mark" aria-hidden="true">LBW</span>
+          <span class="brand-name">LifeBuiltWell</span>
+        </a>
+        <p class="brand-tagline">Eat well. Move with purpose. Live grounded.</p>
+      </div>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="primary-nav" class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="eat-well.html" aria-current="page">Eat Well</a>
+        <a href="move-well.html">Move Well</a>
+        <a href="live-grounded.html">Live Grounded</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Eat Well</h1>
+          <p class="lead">
+            Simple, nourishing meals that support steady energy and consistency — without obsession or extremes.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="index.html#start-here">Start here</a>
+            <a class="btn btn-ghost" href="index.html#foundations">Back to the 3 foundations</a>
+          </div>
+          <p class="fineprint">
+            This content is for general education only and reflects what has helped me personally.
+          </p>
+        </div>
+
+        <div class="hero-card" role="note" aria-label="Eat well summary">
+          <h2 class="h4">A simple plate</h2>
+          <ul class="checklist">
+            <li><strong>Protein</strong> (meat, fish, eggs, Greek yoghurt, legumes)</li>
+            <li><strong>Vegetables</strong> (colour + fibre)</li>
+            <li><strong>Carbs</strong> (optional, based on activity)</li>
+            <li><strong>Healthy fats</strong> (olive oil, nuts, avocado)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Coming soon</h2>
+          <p class="muted">A few practical guides I’m building next.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>Balanced meal ideas</h3>
+            <p>Simple meals you can repeat without getting bored.</p>
+          </article>
+          <article class="card">
+            <h3>Eating well without dieting</h3>
+            <p>Why consistency wins, and how to keep it sustainable.</p>
+			  <a href="eat-well-meaning.html">What Eating Well Actually Means →</a>
+          </article>
+          <article class="card">
+            <h3>Meal photo gallery</h3>
+            <p>Real meal photos + simple notes and ideas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-title">LifeBuiltWell</p>
+      <p class="muted">Foundations for a steady life: food, movement, and faith.</p>
+
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <p class="tiny">© <span id="year"></span> LifeBuiltWell. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('#primary-nav');
+    btn?.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('is-open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
