@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Morning Routine | LifeBuiltWell</title>
+  <meta name="description" content="A personal morning routine page about oral care, exercise, walking, breakfast, devotion time, avoiding tech early, and a simple sleep routine." />
+  <meta property="og:title" content="My Morning Routine | LifeBuiltWell" />
+  <meta property="og:description" content="A practical morning routine built around movement, nourishment, faith, and healthy rhythms." />
+  <meta property="og:type" content="article" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root{
+      --mr-bg:#f6f7f1;
+      --mr-card:#ffffff;
+      --mr-text:#233027;
+      --mr-muted:#5c685f;
+      --mr-accent:#7ca07a;
+      --mr-accent-dark:#5a7e59;
+      --mr-soft:#e8efe4;
+      --mr-border:#d7e1d4;
+      --mr-shadow:0 10px 28px rgba(0,0,0,0.08);
+      --mr-max:1180px;
+    }
+    .mr-page{background:var(--mr-bg);color:var(--mr-text)}
+    .mr-page .container{width:min(92%, var(--mr-max));margin:0 auto}
+    .mr-hero{background:linear-gradient(135deg,#eef5e9 0%,#f9fbf6 100%);border-bottom:1px solid var(--mr-border);padding:72px 0 48px}
+    .mr-hero-grid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:28px;align-items:center}
+    .mr-eyebrow{display:inline-block;text-transform:uppercase;letter-spacing:.08em;color:var(--mr-accent-dark);font-weight:700;font-size:.9rem;margin-bottom:12px}
+    .mr-page h1,.mr-page h2,.mr-page h3{line-height:1.2;margin:0 0 16px}
+    .mr-page h1{font-size:clamp(2.1rem,5vw,3.6rem)}
+    .mr-page h2{font-size:clamp(1.6rem,3vw,2.3rem)}
+    .mr-lead{font-size:1.08rem;color:var(--mr-muted);max-width:760px;margin-bottom:20px}
+    .mr-hero-card,.mr-card,.mr-quote-box{background:var(--mr-card);border:1px solid var(--mr-border);border-radius:22px;box-shadow:var(--mr-shadow)}
+    .mr-hero-card,.mr-card{padding:24px}
+    .mr-hero-card ul,.mr-card ul{margin:0;padding-left:20px}
+    .mr-hero-card li,.mr-card li{margin-bottom:8px}
+    .mr-btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+    .mr-page section{padding:62px 0}
+    .mr-section-head{max-width:780px;margin-bottom:28px}
+    .mr-section-head p{margin:0;color:var(--mr-muted)}
+    .mr-routine-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+    .mr-tag{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--mr-soft);color:var(--mr-accent-dark);font-size:.82rem;font-weight:700;margin-bottom:12px}
+    .mr-card p{color:var(--mr-muted);margin:0 0 14px}
+    .mr-two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+    .mr-quote-box{padding:24px;border-left:5px solid var(--mr-accent);font-size:1.05rem;color:var(--mr-text)}
+    .mr-gallery-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:18px;align-items:stretch}
+    .mr-photo-card{margin:0;background:#fff;border:1px solid var(--mr-border);border-radius:20px;overflow:hidden;box-shadow:var(--mr-shadow);display:flex;flex-direction:column;height:100%}
+    .mr-photo-card img{width:100%;height:280px;object-fit:contain;background:#f3f6ef;padding:14px;border-radius:0;display:block}
+    .mr-photo-card figcaption{padding:14px 16px 18px;color:var(--mr-muted);font-size:.96rem;margin-top:auto}
+    .mr-wide-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:18px;align-items:stretch}
+    .mr-wide-grid .mr-photo-card img{height:340px}
+    @media (max-width: 980px){
+      .mr-hero-grid,.mr-routine-grid,.mr-two-col,.mr-gallery-grid,.mr-wide-grid{grid-template-columns:1fr}
+      .mr-photo-card img{height:auto;max-height:none}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a class="brand-link" href="index.html" aria-label="LifeBuiltWell home">
+          <span class="brand-mark">LBW</span>
+          <span class="brand-name">LifeBuiltWell</span>
+        </a>
+        <p class="brand-tagline">Eat well. Move with purpose. Live grounded.</p>
+      </div>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-nav" class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="eat-well.html">Eat Well</a>
+        <a href="move-well.html">Move Well</a>
+        <a href="morning-routine.html" aria-current="page">Morning Routine</a>
+        <a href="live-grounded.html">Live Grounded</a>
+        <a href="start-here.html">Start Here</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+	
+  <main id="main" class="mr-page">
+    <header class="mr-hero">
+      <div class="container mr-hero-grid">
+        <div>
+          <span class="mr-eyebrow">Life Built Well</span>
+          <h1>My Morning Routine and Why I’m Proud of It</h1>
+          <p class="mr-lead">
+            My mornings are built around simple habits that help me feel clean, strong, grounded, and ready for the day.
+            I begin with a tongue scraper, a warm salt-water gargle, brushing my teeth, and a warm lemon drink.
+            Then I move into 12–15 minutes of stretching and exercise, a short walk with sunlight if possible,
+            a nutritious breakfast, and a short devotion and Bible-reading time. I also try not to look at any tech,
+            especially my phone, for at least the first hour after waking.
+          </p>
+
+          <div class="mr-btn-row">
+            <a class="btn" href="#routine">See the routine</a>
+            <a class="btn btn-ghost" href="#photos">View my photos</a>
+          </div>
+        </div>
+
+        <aside class="mr-hero-card">
+          <h3>My morning in brief</h3>
+          <ul>
+            <li>Tongue scraper first</li>
+            <li>Warm salt-water gargle from about 1/4 glass — do not swallow</li>
+            <li>Brush teeth</li>
+            <li>Warm water with some lemon juice</li>
+            <li>No phone or tech for at least the first hour</li>
+            <li>12–15 minute exercise/stretching session</li>
+            <li>12–15 minute walk with exposure to the sun if possible</li>
+            <li>A nutritious breakfast</li>
+            <li>A short devotion and time in God’s word</li>
+          </ul>
+        </aside>
+      </div>
+    </header>
+
+    <section id="routine">
+      <div class="container">
+        <div class="mr-section-head">
+          <h2>A routine that supports body, mind, and spirit</h2>
+          <p>
+            I’m proud of this routine because it is simple, realistic, and consistent. It does not depend on having a perfect morning.
+            It gives me a clean start, movement, fresh air, nourishing food, and a grounded spiritual beginning for the day.
+            I haven’t had a cold, flu, or been sick for well over a year now, and I believe this routine has helped.
+          </p>
+        </div>
+
+        <div class="mr-routine-grid">
+          <article class="mr-card">
+            <span class="mr-tag">1. Clean start</span>
+            <h3>Wake-up oral-care routine</h3>
+            <p>
+              Another important part of my morning starts right after waking up. I use a tongue scraper first,
+              then gargle warm salt water from about a quarter of a glass without swallowing it, brush my teeth,
+              and drink a warm mix of half a cup of water with some lemon juice.
+            </p>
+            <ul>
+              <li>Tongue scraper first</li>
+              <li>Warm salt-water gargle</li>
+              <li>Brush teeth</li>
+              <li>Warm lemon water</li>
+            </ul>
+          </article>
+
+          <article class="mr-card">
+            <span class="mr-tag">2. Move first</span>
+            <h3>12–15 minutes of exercise and stretching</h3>
+            <p>
+              I begin the active part of the morning with a short block of movement. It helps wake up my body,
+              loosen tight areas, improve circulation, and set a positive tone for the rest of the day.
+            </p>
+            <ul>
+              <li>Gentle mobility and stretching</li>
+              <li>Simple floor-based positions and holds</li>
+              <li>A realistic routine I can keep doing consistently</li>
+            </ul>
+          </article>
+
+          <article class="mr-card">
+            <span class="mr-tag">3. Get outside</span>
+            <h3>12–15 minute walk with sunlight if possible</h3>
+            <p>
+              After moving indoors, I like to step outside for a short walk. Fresh air, natural light,
+              and a change of scenery help me feel more awake, calm, and mentally ready for the day ahead.
+            </p>
+            <ul>
+              <li>Fresh air and outdoor light</li>
+              <li>A calm transition into the day</li>
+              <li>A simple way to build consistency</li>
+            </ul>
+          </article>
+
+          <article class="mr-card">
+            <span class="mr-tag">4. Fuel well</span>
+            <h3>A nutritious breakfast</h3>
+            <p>
+              Breakfast is an important part of my morning because it gives me steady fuel. My breakfasts often include
+              yoghurt, cereal or muesli, fruit, nuts, plant-based protein powder and sometimes toast or a warm drink.
+              It helps me feel ready and well-supported.
+            </p>
+            <ul>
+              <li>Nutritious foods that feel sustainable</li>
+              <li>Fruit, nuts, yoghurt, and other simple staples</li>
+              <li>A consistent habit rather than an afterthought</li>
+            </ul>
+          </article>
+
+          <article class="mr-card">
+            <span class="mr-tag">5. Start grounded</span>
+            <h3>Short devotion and time in God’s word</h3>
+            <p>
+              One of the most meaningful parts of my routine is a short time of devotion and reading God’s word.
+              It helps center my thinking, shape my perspective, and begin the day with peace rather than rush.
+            </p>
+            <ul>
+              <li>A quiet spiritual foundation</li>
+              <li>Stillness before the busyness of the day</li>
+              <li>A reminder of what matters most</li>
+            </ul>
+          </article>
+
+          <article class="mr-card">
+            <span class="mr-tag">Why I’m proud of it</span>
+            <h3>Small habits that add up</h3>
+            <p>
+              I’m proud of this routine because it reflects consistency, discipline, gratitude, health, and faith.
+              It is not flashy, but it is real. From oral care to movement to breakfast to devotion,
+              it helps me take care of myself in a balanced way.
+            </p>
+            <ul>
+              <li>A clean and refreshing start</li>
+              <li>Movement for my body</li>
+              <li>Fresh air and light</li>
+              <li>Nourishment and spiritual grounding</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="photos">
+      <div class="container">
+        <div class="mr-section-head">
+          <h2>Photos from my routine</h2>
+          <p>
+            These photos make the page feel more personal and genuine. They show the actual tools, movements,
+            walking, and breakfasts that are part of my mornings.
+          </p>
+        </div>
+
+        <div class="mr-gallery-grid">
+          <figure class="mr-photo-card">
+            <img src="images/tongue-scraper.jpeg" alt="Tongue scraper used as part of the morning routine" />
+            <figcaption><strong>Tongue scraper:</strong> one of the first things I use after waking up. I then gargle with salt water, brush my teeth and drink some warm water with lemon juice.</figcaption>
+          </figure>
+
+          <figure class="mr-photo-card">
+            <img src="images/walk-1.jpeg" alt="Walking outdoors in the morning sunlight" />
+            <figcaption><strong>Morning walk:</strong> getting outside, moving, and aiming for sunlight if possible.</figcaption>
+          </figure>
+
+          <figure class="mr-photo-card">
+            <img src="images/walk-2.jpeg" alt="Another view of the short morning walk outdoors" />
+            <figcaption><strong>Walking outdoors:</strong> a simple 12–15 minute walk helps me feel awake and clear-headed.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="mr-section-head">
+          <h2>Exercise and stretching photos</h2>
+          <p>
+            My morning movement is not complicated. It includes practical stretches and positions that help me loosen up and start the day well.
+          </p>
+        </div>
+
+        <div class="mr-gallery-grid">
+          <figure class="mr-photo-card">
+            <img src="images/stretch-1.jpeg" alt="Morning stretching pose on an exercise mat" />
+            <figcaption>Stretching and mobility work on the mat.</figcaption>
+          </figure>
+
+          <figure class="mr-photo-card">
+            <img src="images/stretch-2.jpeg" alt="Close-up exercise stretching position on the mat" />
+            <figcaption>A closer view of one of the regular morning stretches. Squatting.</figcaption>
+          </figure>
+
+          <figure class="mr-photo-card">
+            <img src="images/stretch-3.jpeg" alt="Lying exercise position on the mat as part of the routine" />
+            <figcaption>Floor-based movement and stretching are part of my morning routine.</figcaption>
+          </figure>
+
+          <figure class="mr-photo-card">
+            <img src="images/stretch-4.jpeg" alt="Supported back extension stretch on the mat" />
+            <figcaption>Another position that helps open and loosen the body.</figcaption>
+          </figure>
+
+          <figure class="mr-photo-card">
+            <img src="images/stretch-5.jpeg" alt="Forward reaching stretch using blocks on the mat" />
+            <figcaption>A gentle stretch that helps me wake up the body for the day ahead. Lunge stretching hip flexors and groins.</figcaption>
+          </figure>
+
+          <figure class="mr-photo-card">
+            <img src="images/walk-1.jpeg" alt="Walking as part of the movement routine" />
+            <figcaption>The walk is short, but it adds another useful layer of movement and rhythm.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="mr-section-head">
+          <h2>Breakfast examples</h2>
+          <p>
+            These meals show the kind of breakfast I enjoy: simple, nourishing, and realistic enough to keep as a regular habit.
+          </p>
+        </div>
+
+        <div class="mr-wide-grid">
+          <figure class="mr-photo-card">
+            <img src="images/breakfast-1.jpeg" alt="Breakfast with fruit, nuts, yoghurt cereal and a warm drink" />
+            <figcaption><strong>Breakfast example 1:</strong> fruit, nuts, berries, yoghurt with cereal, and a warm drink.</figcaption>
+          </figure>
+
+          <figure class="mr-photo-card">
+            <img src="images/breakfast-2.jpeg" alt="Breakfast with toast, yoghurt, nuts, berries and warm drinks" />
+            <figcaption><strong>Breakfast example 2:</strong> toast, yoghurt, berries, nuts, and warm drinks including lemon water.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="mr-section-head">
+          <h2>My approach to technology in the morning</h2>
+          <p>
+            One important part of my routine is what I do not do. I generally avoid looking at any technology,
+            especially my phone, for at least the first hour after waking up.
+          </p>
+        </div>
+
+        <div class="mr-two-col">
+          <div class="mr-card">
+            <h3>Why I avoid my phone early</h3>
+            <p>
+              I have found that checking messages, emails, or notifications first thing in the morning
+              can quickly overwhelm your mind and shift your focus away from a calm and intentional start.
+              Keeping tech away gives me room to begin the day with clarity.
+            </p>
+            <ul>
+              <li>Keeps my mind clear and calm</li>
+              <li>Prevents early stress from notifications</li>
+              <li>Allows me to focus on my routine first</li>
+              <li>Helps me start the day on my terms</li>
+            </ul>
+          </div>
+
+          <div class="mr-quote-box">
+            “Starting the day without technology helps me think clearly before the world starts asking things of me.”
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mr-two-col">
+        <div>
+          <div class="mr-section-head">
+            <h2>What this routine gives me</h2>
+            <p>
+              A morning routine does not need to be complicated to be meaningful. For me, these habits help me start the day feeling refreshed,
+              physically awake, mentally settled, and spiritually grounded.
+            </p>
+          </div>
+          <div class="mr-quote-box">
+            “A good morning routine doesn’t need to be extreme. It just needs to be meaningful enough that you want to keep showing up for it.”
+          </div>
+        </div>
+
+        <div class="mr-card">
+          <h3>Simple benefits I value</h3>
+          <ul>
+            <li>A clean and refreshing start to the day</li>
+            <li>Movement for my body</li>
+            <li>Fresh air and natural light</li>
+            <li>A nutritious breakfast</li>
+            <li>Quiet devotion and time in God’s word</li>
+            <li>A steadier, healthier beginning overall</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="mr-section-head">
+          <h2>My sleep routine the night before</h2>
+          <p>
+            A good morning actually starts the night before. I try to get to bed before 10pm and create
+            an environment that helps me wind down properly. My phone is not kept in my bedroom,
+            and I use an Amazon Echo device to play the radio for about 25 minutes to help me get off to sleep.
+            It is also set with my morning alarm.
+          </p>
+        </div>
+
+        <div class="mr-routine-grid">
+          <div class="mr-card">
+            <span class="mr-tag">Early sleep</span>
+            <h3>Getting to bed before 10pm</h3>
+            <p>
+              Going to bed early helps me wake up feeling more refreshed and ready to follow through with my morning routine.
+            </p>
+            <ul>
+              <li>Better energy in the morning</li>
+              <li>More consistent routine</li>
+              <li>Improved overall wellbeing</li>
+            </ul>
+          </div>
+
+          <div class="mr-card">
+            <span class="mr-tag">No phone in bedroom</span>
+            <h3>Keeping my phone out of the room</h3>
+            <p>
+              I do not keep my phone in my bedroom. This removes distraction and helps me disconnect properly before sleep.
+            </p>
+            <ul>
+              <li>Less temptation to scroll</li>
+              <li>Better sleep quality</li>
+              <li>Clear boundary between day and night</li>
+            </ul>
+          </div>
+
+          <div class="mr-card">
+            <span class="mr-tag">Wind down</span>
+            <h3>Using audio to fall asleep</h3>
+            <p>
+              I use an Amazon Echo device to play the radio for about 25 minutes. It helps me relax and drift off naturally.
+            </p>
+            <ul>
+              <li>Creates a calm atmosphere</li>
+              <li>Helps switch off mentally</li>
+              <li>Stops overthinking at night</li>
+            </ul>
+          </div>
+
+          <div class="mr-card">
+            <span class="mr-tag">Consistent wake-up</span>
+            <h3>Simple alarm setup</h3>
+            <p>
+              My alarm is also set on the Echo device, keeping my phone completely out of the bedroom and supporting a cleaner routine.
+            </p>
+            <ul>
+              <li>Simple and distraction-free</li>
+              <li>No notifications overnight</li>
+              <li>Supports better habits</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-title">LifeBuiltWell</p>
+      <p class="muted">Foundations for a steady life: food, movement, and faith.</p>
+
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="morning-routine.html">Morning Routine</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <p class="tiny">© <span id="year"></span> LifeBuiltWell. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('#primary-nav');
+    btn?.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('is-open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
