@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>10 Simple Healthy Meals I Actually Eat | LifeBuiltWell</title>
+  <meta name="description" content="A practical list of 10 simple healthy meals I actually eat — realistic meals built around protein, colour, balance and consistency." />
+
+  <meta property="og:title" content="10 Simple Healthy Meals I Actually Eat | LifeBuiltWell" />
+  <meta property="og:description" content="Simple, realistic meals that support energy, consistency, and a healthy life." />
+  <meta property="og:type" content="article" />
+
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    :root{
+      --lbw-bg:#f6f7f1;
+      --lbw-card:#ffffff;
+      --lbw-text:#233027;
+      --lbw-muted:#5c685f;
+      --lbw-accent:#7ca07a;
+      --lbw-accent-dark:#5a7e59;
+      --lbw-soft:#e8efe4;
+      --lbw-border:#d7e1d4;
+      --lbw-shadow:0 10px 28px rgba(0,0,0,0.08);
+      --lbw-max:1180px;
+    }
+
+    .article-page{
+      background:var(--lbw-bg);
+      color:var(--lbw-text);
+    }
+
+    .article-page .container{
+      width:min(92%, var(--lbw-max));
+      margin:0 auto;
+    }
+
+    .article-hero{
+      background:linear-gradient(135deg,#eef5e9 0%,#f9fbf6 100%);
+      border-bottom:1px solid var(--lbw-border);
+      padding:72px 0 48px;
+    }
+
+    .article-hero-grid{
+      display:grid;
+      grid-template-columns:1.15fr 0.85fr;
+      gap:28px;
+      align-items:center;
+    }
+
+    .article-eyebrow{
+      display:inline-block;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      color:var(--lbw-accent-dark);
+      font-weight:700;
+      font-size:.9rem;
+      margin-bottom:12px;
+    }
+
+    .article-page h1,
+    .article-page h2,
+    .article-page h3{
+      line-height:1.2;
+      margin:0 0 16px;
+    }
+
+    .article-page h1{font-size:clamp(2.1rem,5vw,3.6rem)}
+    .article-page h2{font-size:clamp(1.6rem,3vw,2.3rem)}
+
+    .article-lead{
+      font-size:1.08rem;
+      color:var(--lbw-muted);
+      max-width:760px;
+      margin-bottom:20px;
+    }
+
+    .article-card,
+    .article-hero-card,
+    .article-quote{
+      background:var(--lbw-card);
+      border:1px solid var(--lbw-border);
+      border-radius:22px;
+      box-shadow:var(--lbw-shadow);
+    }
+
+    .article-card,
+    .article-hero-card{
+      padding:24px;
+    }
+
+    .article-hero-card ul,
+    .article-card ul{
+      margin:0;
+      padding-left:20px;
+    }
+
+    .article-hero-card li,
+    .article-card li{
+      margin-bottom:8px;
+    }
+
+    .article-btn-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:18px;
+    }
+
+    .article-page section{
+      padding:62px 0;
+    }
+
+    .article-section-head{
+      max-width:780px;
+      margin-bottom:28px;
+    }
+
+    .article-section-head p{
+      margin:0;
+      color:var(--lbw-muted);
+    }
+
+    .meal-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:22px;
+    }
+
+    .meal-tag{
+      display:inline-block;
+      padding:7px 11px;
+      border-radius:999px;
+      background:var(--lbw-soft);
+      color:var(--lbw-accent-dark);
+      font-size:.82rem;
+      font-weight:700;
+      margin-bottom:12px;
+    }
+
+    .article-card p{
+      color:var(--lbw-muted);
+      margin:0 0 14px;
+    }
+
+    .two-col{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:24px;
+      align-items:start;
+    }
+
+    .photo-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+      gap:18px;
+      align-items:stretch;
+    }
+
+    .photo-card{
+      margin:0;
+      background:#fff;
+      border:1px solid var(--lbw-border);
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:var(--lbw-shadow);
+      display:flex;
+      flex-direction:column;
+      height:100%;
+    }
+
+    .photo-card img{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+      display:block;
+      border-radius:0;
+    }
+
+    .photo-card figcaption{
+      padding:14px 16px 18px;
+      color:var(--lbw-muted);
+      font-size:.96rem;
+      margin-top:auto;
+    }
+
+    .article-quote{
+      padding:24px;
+      border-left:5px solid var(--lbw-accent);
+      font-size:1.05rem;
+      color:var(--lbw-text);
+    }
+
+    .link-list a{
+      display:block;
+      margin:0 0 10px;
+      color:var(--lbw-accent-dark);
+      font-weight:700;
+      text-decoration:none;
+    }
+
+    @media (max-width: 980px){
+      .article-hero-grid,
+      .meal-grid,
+      .two-col,
+      .photo-grid{
+        grid-template-columns:1fr;
+      }
+
+      .photo-card img{
+        height:auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a class="brand-link" href="index.html" aria-label="LifeBuiltWell home">
+          <span class="brand-mark">LBW</span>
+          <span class="brand-name">LifeBuiltWell</span>
+        </a>
+        <p class="brand-tagline">Eat well. Move with purpose. Live grounded.</p>
+      </div>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-nav" class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="eat-well.html" aria-current="page">Eat Well</a>
+        <a href="move-well.html">Move Well</a>
+        <a href="morning-routine.html">Morning Routine</a>
+        <a href="live-grounded.html">Live Grounded</a>
+        <a href="start-here.html">Start Here</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="article-page">
+    <header class="article-hero">
+      <div class="container article-hero-grid">
+        <div>
+          <span class="article-eyebrow">Eat Well</span>
+          <h1>10 Simple Healthy Meals I Actually Eat</h1>
+          <p class="article-lead">
+            I’m not interested in extreme diets or complicated meal plans. These are the kinds of meals I actually eat:
+            simple, balanced, repeatable, and realistic enough to support energy and consistency over time.
+          </p>
+
+          <div class="article-btn-row">
+            <a class="btn" href="#meals">See the 10 meals</a>
+            <a class="btn btn-ghost" href="morning-routine.html">See my morning routine</a>
+          </div>
+        </div>
+
+        <aside class="article-hero-card">
+          <h3>What these meals have in common</h3>
+          <ul>
+            <li>Built around simple real food</li>
+            <li>Not obsessed with perfection</li>
+            <li>Balanced for steady energy</li>
+            <li>Easy enough to repeat consistently</li>
+            <li>Support a practical healthy lifestyle</li>
+          </ul>
+        </aside>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="article-section-head">
+          <h2>My food philosophy</h2>
+          <p>
+            For me, eating well is about consistency rather than intensity. I want meals that are enjoyable,
+            nourishing, and sustainable. I’m aiming for a healthy pattern, not food stress.
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div class="article-card">
+            <h3>What I aim for</h3>
+            <ul>
+              <li>Some quality protein</li>
+              <li>Fruit or vegetables where possible</li>
+              <li>Useful fats and fibre</li>
+              <li>Meals that feel realistic and repeatable</li>
+              <li>A way of eating I can actually maintain</li>
+            </ul>
+          </div>
+
+          <div class="article-quote">
+            “I’d rather eat simple healthy meals consistently than chase a perfect plan I can’t sustain.”
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="meals">
+      <div class="container">
+        <div class="article-section-head">
+          <h2>The 10 meals</h2>
+          <p>
+            These are simple examples of the kinds of meals I actually eat. Some are breakfasts, some are lunch or dinner ideas,
+            and all of them fit the LifeBuiltWell idea of simple, steady health.
+          </p>
+        </div>
+
+        <div class="meal-grid">
+          <article class="article-card">
+            <span class="meal-tag">Meal 1</span>
+            <h3>Yoghurt, cereal, berries, nuts, and fruit</h3>
+            <p>A simple breakfast that gives me a good mix of texture, flavour, protein, and energy.</p>
+            <ul>
+              <li>Easy to prepare</li>
+              <li>Great regular breakfast option</li>
+              <li>Can be adjusted depending on appetite</li>
+            </ul>
+          </article>
+
+          <article class="article-card">
+            <span class="meal-tag">Meal 2</span>
+            <h3>Toast with yoghurt, berries, and nuts</h3>
+            <p>This is another breakfast I come back to often because it is satisfying without being complicated.</p>
+            <ul>
+              <li>Warm and filling</li>
+              <li>Easy to repeat</li>
+              <li>Good balance of comfort and nutrition</li>
+            </ul>
+          </article>
+
+          <article class="article-card">
+            <span class="meal-tag">Meal 3</span>
+            <h3>Salmon with salad and avocado</h3>
+            <p>A strong meal when I want protein, healthy fats, and freshness on the same plate.</p>
+            <ul>
+              <li>Rich in flavour</li>
+              <li>Leaves me feeling well-fuelled</li>
+              <li>Supports the “simple but strong” approach</li>
+            </ul>
+          </article>
+
+          <article class="article-card">
+            <span class="meal-tag">Meal 4</span>
+            <h3>Fish with salad, celery, tomato, and beetroot</h3>
+            <p>This is one of those meals that feels clean, practical, and supportive without any fuss.</p>
+            <ul>
+              <li>Simple plate structure</li>
+              <li>Easy to understand and build</li>
+              <li>Lots of colour and freshness</li>
+            </ul>
+          </article>
+
+          <article class="article-card">
+            <span class="meal-tag">Meal 5</span>
+            <h3>Chicken with avocado, tomato, celery, and salad</h3>
+            <p>A meal built around a good protein source with some fresh sides that help keep it balanced.</p>
+            <ul>
+              <li>High in protein</li>
+              <li>Feels satisfying</li>
+              <li>Easy to vary with what is available</li>
+            </ul>
+          </article>
+
+          <article class="article-card">
+            <span class="meal-tag">Meal 6</span>
+            <h3>Pizza or pie with salad on the side</h3>
+            <p>
+              I don’t believe healthy eating means never enjoying foods like pizza or pie.
+              I just try to build the rest of the plate sensibly.
+            </p>
+            <ul>
+              <li>More realistic than all-or-nothing thinking</li>
+              <li>Still includes vegetables and balance</li>
+              <li>Supports long-term consistency</li>
+            </ul>
+          </article>
+
+          <article class="article-card">
+            <span class="meal-tag">Meal 7</span>
+            <h3>Breakfast bowl with grapes, nuts, and a hot drink</h3>
+            <p>This is one of those simple meals that works because it is easy and enjoyable.</p>
+            <ul>
+              <li>Quick to prepare</li>
+              <li>Good morning energy</li>
+              <li>Fits well into a steady routine</li>
+            </ul>
+          </article>
+
+          <article class="article-card">
+            <span class="meal-tag">Meal 8</span>
+            <h3>Protein powder added into breakfast</h3>
+            <p>
+              Sometimes I include plant-based protein powder in breakfast to support satiety and make the meal feel more complete.
+            </p>
+            <ul>
+              <li>Useful practical addition</li>
+              <li>Helps round out the meal</li>
+              <li>Easy to include consistently</li>
+            </ul>
+          </article>
+
+          <article class="article-card">
+            <span class="meal-tag">Meal 9</span>
+            <h3>Simple mixed plate with vegetables and a main protein</h3>
+            <p>
+              Many of my meals follow this pattern: one main source of protein plus a few simple fresh sides.
+            </p>
+            <ul>
+              <li>Easy decision-making</li>
+              <li>Helps avoid overcomplicating food</li>
+              <li>Works well for lunch or dinner</li>
+            </ul>
+          </article>
+
+          <article class="article-card">
+            <span class="meal-tag">Meal 10</span>
+            <h3>Realistic meals I can repeat without stress</h3>
+            <p>
+              This last one is really the big idea: I try to choose meals I can actually keep eating over time.
+              That matters more than chasing perfect food.
+            </p>
+            <ul>
+              <li>Consistency over perfection</li>
+              <li>Simple over extreme</li>
+              <li>Healthy habits that actually last</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="article-section-head">
+          <h2>Real meal examples</h2>
+          <p>
+            These photos fit naturally with this page and help show that the LifeBuiltWell approach is based on real meals, not theory.
+          </p>
+        </div>
+
+        <div class="photo-grid">
+          <figure class="photo-card">
+            <img src="images/meal-3-breakfast-bowl-fruit-nuts.webp" alt="Breakfast tray with cereal bowl, grapes, nuts and hot drink" />
+            <figcaption>Breakfast bowl with fruit and nuts — simple, repeatable, and easy to enjoy regularly.</figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img src="images/meal-4-toast-berries-nuts.webp" alt="Breakfast tray with toast, berries, nuts and drinks" />
+            <figcaption>Toast, berries, nuts, and drinks — another example of a balanced and realistic breakfast.</figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img src="images/meal-9-salmon-avocado-salad.webp" alt="Plate with salmon, avocado, tomatoes, salad, beetroot and spring roll" />
+            <figcaption>Salmon, avocado, and salad — a strong meal built around protein and freshness.</figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img src="images/meal-6-fish-celery-salad.webp" alt="Plate with fish, celery, salad, beetroot and tomato" />
+            <figcaption>Fish with salad and vegetables — simple, practical, and supportive.</figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img src="images/meal-1-pizza-chicken-avocado.webp" alt="Plate with pizza slice, chicken, avocado, tomato, celery and beetroot" />
+            <figcaption>A realistic plate that mixes enjoyment with balance.</figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img src="images/meal-7-pie-salad-beetroot.webp" alt="Plate with pie, salad, beetroot, tomato and sauce" />
+            <figcaption>Another example of how I try to keep meals practical rather than extreme.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="article-section-head">
+          <h2>Why these meals work for me</h2>
+          <p>
+            These meals are not impressive because they are perfect. They work because they are simple enough to repeat,
+            enjoyable enough to stick with, and balanced enough to support my day-to-day health.
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div class="article-card">
+            <h3>What I value most</h3>
+            <ul>
+              <li>Meals I can actually keep eating</li>
+              <li>Food that supports energy and steadiness</li>
+              <li>A realistic approach to health</li>
+              <li>Less pressure, more consistency</li>
+            </ul>
+          </div>
+
+          <div class="article-card">
+            <h3>Related pages</h3>
+            <div class="link-list">
+              <a href="morning-routine.html">My Morning Routine →</a>
+              <a href="eat-well.html">Eat Well →</a>
+              <a href="eat-well-meaning.html">What Eating Well Actually Means →</a>
+              <a href="start-here.html">Start Here →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-title">LifeBuiltWell</p>
+      <p class="muted">Foundations for a steady life: food, movement, and faith.</p>
+
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="morning-routine.html">Morning Routine</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <p class="tiny">© <span id="year"></span> LifeBuiltWell. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('#primary-nav');
+    btn?.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('is-open');
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
