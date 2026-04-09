@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiet Time Devotions | LifeBuiltWell</title>
+  <meta name="description" content="A simple guide to quiet time devotions, including the YouVersion Bible App, The Word for Today, Our Daily Bread, and other helpful devotional resources.">
+  <style>
+    :root {
+      --bg: #f6f8f2;
+      --surface: #ffffff;
+      --ink: #223127;
+      --muted: #5c6b60;
+      --brand: #9fc48a;
+      --brand-dark: #6f9b5c;
+      --border: #d9e5d3;
+      --accent: #eef5e8;
+      --shadow: 0 10px 28px rgba(34,49,39,0.08);
+      --max: 980px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+
+    a { color: #2d5e35; }
+    a:hover { color: #1d4324; }
+
+    .topbar {
+      background: #e6f0de;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      padding: 18px 0 8px;
+    }
+
+    .brand {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--ink);
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    .tagline {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    nav {
+      padding: 14px 0 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--ink);
+      background: rgba(255,255,255,0.65);
+      border: 1px solid var(--border);
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      background: #fff;
+    }
+
+    .hero {
+      padding: 38px 0 18px;
+    }
+
+    .hero-card {
+      background: linear-gradient(135deg, #f8fbf5 0%, #edf6e6 100%);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      padding: 34px 28px;
+    }
+
+    .eyebrow {
+      color: var(--brand-dark);
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 10px;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.2;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4.2vw, 3rem);
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 2.8vw, 2rem);
+      margin-bottom: 14px;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .lead {
+      font-size: 1.08rem;
+      color: #2e4033;
+      max-width: 760px;
+    }
+
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--brand-dark);
+      color: #fff;
+      padding: 11px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+
+    .button.secondary {
+      background: #fff;
+      color: var(--ink);
+      border: 1px solid var(--border);
+    }
+
+    main {
+      padding: 18px 0 54px;
+    }
+
+    section {
+      margin: 28px 0;
+    }
+
+    .section-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .resource {
+      background: #fbfdf9;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .resource p:last-child,
+    .section-card p:last-child,
+    .section-card ul:last-child { margin-bottom: 0; }
+
+    .label {
+      display: inline-block;
+      background: var(--accent);
+      color: #35563a;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .verse-box {
+      background: #f4f8ef;
+      border-left: 5px solid var(--brand-dark);
+      border-radius: 14px;
+      padding: 18px 18px 16px;
+      color: #2d3d31;
+    }
+
+    .mini-note {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .footer {
+      background: #e6f0de;
+      border-top: 1px solid var(--border);
+      padding: 26px 0 34px;
+      color: #304236;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    @media (min-width: 760px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+      .two-col { grid-template-columns: 1.15fr 0.85fr; }
+      .hero-card { padding: 42px; }
+      .section-card { padding: 34px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap site-header">
+      <a class="brand" href="index.html">LifeBuiltWell</a>
+      <p class="tagline">Simple habits for eating well, moving well, and living grounded.</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#eat-well">Eat Well</a>
+        <a href="index.html#move-well">Move Well</a>
+        <a href="index.html#live-grounded">Live Grounded</a>
+        <a href="morning-routine.html">Morning Routine</a>
+        <a href="10-simple-healthy-meals-i-actually-eat.html">Healthy Meals</a>
+        <a href="exercise-equipment.html">Exercise Equipment</a>
+      </nav>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-card">
+        <div class="eyebrow">Live Grounded</div>
+        <h1>Quiet Time Devotions</h1>
+        <p class="lead">One of the simplest habits that helps me feel settled and centred is taking a few minutes in the morning for a quiet time with God. It does not need to be complicated. Sometimes it is a short devotion with one Bible passage. Other times it is a video, a guided reflection, or simply listening to Scripture being read aloud while the day is still calm.</p>
+        <p class="lead">These are some of the devotion resources I use now or have used over the years. Each one has a slightly different feel, which is helpful because different mornings call for different kinds of encouragement.</p>
+        <div class="quick-links">
+          <a class="button" href="#resources">See devotion resources</a>
+          <a class="button secondary" href="#simple-routine">A simple quiet time routine</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="section-card">
+        <h2>Why quiet time matters</h2>
+        <div class="two-col">
+          <div>
+            <p>Quiet time gives the day a better starting point. Before messages, noise, tasks, and pressure begin to pile up, it creates a small window to slow down, listen, pray, and bring attention back to what matters most. For many people, that is not just spiritually helpful. It is calming and grounding as well.</p>
+            <p>Some mornings I want something visual and engaging. On other mornings I want something brief and direct. That is why I appreciate having more than one devotional option available. The goal is not to make quiet time difficult. The goal is to make it steady.</p>
+          </div>
+          <div class="verse-box">
+            <strong>“Be still, and know that I am God.”</strong><br>
+            Psalm 46:10
+            <br><br>
+            <strong>“Your word is a lamp for my feet, a light on my path.”</strong><br>
+            Psalm 119:105
+          </div>
+        </div>
+      </section>
+
+      <section id="resources">
+        <div class="section-card">
+          <h2>Devotion resources I use or have used</h2>
+          <div class="grid">
+            <article class="resource">
+              <div class="label">Current favourite</div>
+              <h3>YouVersion Bible App</h3>
+              <p>The Bible App by YouVersion is one of the easiest ways to build a regular devotional habit. I often use it in the morning because it feels simple to open and begin straight away. A big strength of the app is that it combines several ways to engage with Scripture, so it works well whether you prefer reading, listening, or watching.</p>
+              <p>What I especially like is the daily guided content. Many mornings there is a short video or teaching clip from a different speaker, along with reflection material that matches the day’s theme. After that, I can continue into the Bible text itself and either read the passage or have it read aloud. That mix of video, written reflection, prayer, and Scripture makes it very approachable.</p>
+              <p>It is also useful because it can suit different lengths of quiet time. If I only have a few minutes, I can still meaningfully engage. If I have more time, I can keep going into a longer reading plan, save verses, highlight key parts, or return to something later in the day.</p>
+              <p><strong>Why it works well:</strong></p>
+              <ul>
+                <li>Good for mornings when you want guided content.</li>
+                <li>Helpful if you enjoy short videos and reflections.</li>
+                <li>Lets you move straight from devotion content into the Bible text.</li>
+                <li>Audio Bible options can make the time feel calm and unhurried.</li>
+              </ul>
+              <p><a href="https://www.youversion.com/bible-app" target="_blank" rel="noopener">Visit YouVersion</a></p>
+            </article>
+
+            <article class="resource">
+              <div class="label">Brief and practical</div>
+              <h3>The Word for Today</h3>
+              <p>The Word for Today is another helpful option, especially when I want something short, direct, and easy to absorb. It tends to read more like a focused devotional thought for the day. There is usually a clear theme, a Bible verse, and a practical application point that can stay with you across the day.</p>
+              <p>I like this style because it does not require a lot of setup or time. On a busy morning, it can still provide a strong and meaningful prompt for prayer and reflection. It is the kind of resource that can help bring one clear thought into focus rather than covering too much at once.</p>
+              <p>This also suits people who appreciate hearing the devotion read to them. It is simple, accessible, and good for building consistency when mornings are full.</p>
+              <p><strong>Why it works well:</strong></p>
+              <ul>
+                <li>Very manageable on busy mornings.</li>
+                <li>Strong for one clear lesson or challenge each day.</li>
+                <li>Easy to read or listen to quickly.</li>
+                <li>Pairs well with reading a short extra Bible passage afterwards.</li>
+              </ul>
+              <p><a href="https://vision.org.au/show/the-word-for-today/" target="_blank" rel="noopener">Visit The Word for Today</a></p>
+            </article>
+
+            <article class="resource">
+              <div class="label">Long-time classic</div>
+              <h3>Our Daily Bread</h3>
+              <p>Our Daily Bread is one of the devotional resources I have used for a long time. Years ago, I remember the paper booklet version being a familiar and trusted part of quiet time. There is something warm and steady about that style of devotion. Even now, although it is easy to use in app form, it still carries that same familiar feel.</p>
+              <p>One thing I appreciate about Our Daily Bread is its simple, reflective tone. It often connects a Bible passage with an everyday life situation in a way that feels thoughtful and encouraging. It is not rushed. It gives space to pause and consider what the reading means personally.</p>
+              <p>For some people, print is still preferable. A physical booklet can remove distraction and screen fatigue, and it can make quiet time feel even more deliberate. That is one reason Our Daily Bread has remained such a valued option for many years.</p>
+              <p><strong>Why it works well:</strong></p>
+              <ul>
+                <li>Familiar and trusted devotional style.</li>
+                <li>Encouraging daily readings with a reflective tone.</li>
+                <li>Works well in both app and print form.</li>
+                <li>Excellent for people who prefer a slower, traditional format.</li>
+              </ul>
+              <p><a href="https://ourdailybread.org/" target="_blank" rel="noopener">Visit Our Daily Bread</a></p>
+            </article>
+
+            <article class="resource">
+              <div class="label">Optional extras</div>
+              <h3>Other devotion options worth exploring</h3>
+              <p>If you already use one main app, that may be enough. But there are a few other resources that some people may find helpful depending on what style of quiet time they prefer.</p>
+              <ul>
+                <li><strong>Lectio 365:</strong> a guided devotional style built around prayer, Scripture, and reflection.</li>
+                <li><strong>BibleProject:</strong> especially helpful if you enjoy understanding the bigger story and themes of the Bible.</li>
+                <li><strong>Dwell:</strong> suited to people who love listening to Scripture in a calm audio format.</li>
+                <li><strong>Local church Bible reading plans:</strong> these can be excellent if you want your quiet time connected with your church community.</li>
+              </ul>
+              <p>The best resource is usually the one you will actually return to consistently. A simple, steady habit matters more than having the perfect method.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" id="simple-routine">
+        <h2>A simple quiet time routine</h2>
+        <p>You do not need a long, complicated process. A quiet time can be as simple as this:</p>
+        <ol>
+          <li><strong>Start in stillness.</strong> Sit somewhere calm for a minute and breathe.</li>
+          <li><strong>Open one devotional resource.</strong> Use YouVersion, The Word for Today, or Our Daily Bread.</li>
+          <li><strong>Read or listen carefully.</strong> Try not to rush the words.</li>
+          <li><strong>Read the Bible passage itself.</strong> Stay with one verse or section that stands out.</li>
+          <li><strong>Pray briefly.</strong> Thank God, ask for wisdom, and commit the day to Him.</li>
+          <li><strong>Carry one thought with you.</strong> Choose one phrase, verse, or idea to remember through the day.</li>
+        </ol>
+        <p class="mini-note">Even 5 to 10 minutes can be meaningful when done regularly.</p>
+      </section>
+
+      <section class="section-card">
+        <h2>App or print?</h2>
+        <div class="grid">
+          <div class="resource">
+            <h3>Why apps are helpful</h3>
+            <ul>
+              <li>Easy to access first thing in the morning.</li>
+              <li>Helpful audio features for listening instead of reading.</li>
+              <li>Useful when travelling or moving between rooms.</li>
+              <li>Can combine devotion content, Bible text, and prayer prompts in one place.</li>
+            </ul>
+          </div>
+          <div class="resource">
+            <h3>Why print can still be wonderful</h3>
+            <ul>
+              <li>Less distraction from notifications and screens.</li>
+              <li>Feels slower, quieter, and more deliberate.</li>
+              <li>Simple to leave on a table as a visual reminder.</li>
+              <li>Can suit those who enjoy underlining, journalling, or reflecting by hand.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <h2>Final thought</h2>
+        <p>Quiet time devotions do not have to be impressive to be deeply valuable. A few faithful minutes with Scripture, prayer, and reflection can shape the tone of the whole day. Whether that happens through the YouVersion Bible App, The Word for Today, Our Daily Bread, or another trusted resource, the important thing is coming back regularly and making space to listen.</p>
+        <p>For me, this part of the morning is not about doing more. It is about beginning from a better place.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p><strong>LifeBuiltWell</strong> — building a healthy life through simple daily habits.</p>
+    </div>
+  </footer>
+</body>
+</html>
