@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Melbourne Motor Show 2026 | LifeBuiltWell</title>
+  <meta name="description" content="Our opening day visit to the Melbourne Motor Show 2026, with original photos of supercars, Fast & Furious vehicles, classic cars, and reflections on a great father-and-son outing.">
+  <style>
+    :root {
+      --bg: #f6f8f2;
+      --surface: #ffffff;
+      --ink: #223127;
+      --muted: #5c6b60;
+      --brand: #9fc48a;
+      --brand-dark: #6f9b5c;
+      --border: #d9e5d3;
+      --accent: #eef5e8;
+      --shadow: 0 10px 28px rgba(34,49,39,0.08);
+      --max: 980px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+
+    a { color: #2d5e35; }
+    a:hover { color: #1d4324; }
+
+    .topbar {
+      background: #e6f0de;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      padding: 18px 0 8px;
+    }
+
+    .brand {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--ink);
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    .tagline {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .site-nav {
+      padding: 14px 0 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      color: var(--ink);
+      background: rgba(255,255,255,0.7);
+      border: 1px solid var(--border);
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .site-nav a:hover {
+      background: #fff;
+    }
+
+    .site-nav a.active {
+      background: var(--brand-dark);
+      color: #fff;
+      border-color: var(--brand-dark);
+    }
+
+    .hero {
+      padding: 38px 0 18px;
+    }
+
+    .hero-card {
+      background: linear-gradient(135deg, #f8fbf5 0%, #edf6e6 100%);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      padding: 34px 28px;
+    }
+
+    .eyebrow {
+      color: var(--brand-dark);
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 10px;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.2;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4.2vw, 3rem);
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 2.8vw, 2rem);
+      margin-bottom: 14px;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .lead {
+      font-size: 1.08rem;
+      color: #2e4033;
+      max-width: 780px;
+    }
+
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--brand-dark);
+      color: #fff;
+      padding: 11px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+
+    .button.secondary {
+      background: #fff;
+      color: var(--ink);
+      border: 1px solid var(--border);
+    }
+
+    main {
+      padding: 18px 0 54px;
+    }
+
+    section {
+      margin: 28px 0;
+    }
+
+    .section-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
+    .label {
+      display: inline-block;
+      background: var(--accent);
+      color: #35563a;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .quote-box {
+      background: #f4f8ef;
+      border-left: 5px solid var(--brand-dark);
+      border-radius: 14px;
+      padding: 18px 18px 16px;
+      color: #2d3d31;
+      margin: 18px 0 0;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin-top: 18px;
+    }
+
+    .photo-card {
+      background: #fbfdf9;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 14px;
+    }
+
+    .photo-card p {
+      margin: 12px 0 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .video-wrap video {
+      width: 100%;
+      display: block;
+      border-radius: 14px;
+      margin-top: 12px;
+      background: #000;
+    }
+
+    .mini-note {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .footer {
+      background: #e6f0de;
+      border-top: 1px solid var(--border);
+      padding: 26px 0 34px;
+      color: #304236;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    .footer-links {
+      margin: 12px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .footer-links a {
+      color: #35563a;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-title {
+      margin: 0 0 6px;
+      font-weight: 700;
+    }
+
+    .tiny {
+      margin: 10px 0 0;
+      font-size: 0.9rem;
+    }
+
+    .muted {
+      color: #5c6b60;
+    }
+
+    @media (min-width: 760px) {
+      .hero-card { padding: 42px; }
+      .section-card { padding: 34px; }
+      .image-grid.two-col { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap site-header">
+      <a class="brand" href="index.html">LifeBuiltWell</a>
+      <p class="tagline">Simple habits for eating well, moving well, and living grounded.</p>
+
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="morning-routine.html">Morning Routine</a>
+        <a href="quiet-time-devotions.html">Quiet Time Devotions</a>
+        <a href="10-simple-healthy-meals-i-actually-eat.html">Healthy Meals</a>
+        <a href="motor-show.html" class="active">Motor Show</a>
+      </nav>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-card">
+        <div class="eyebrow">Real Experiences</div>
+        <h1>Melbourne Motor Show 2026</h1>
+        <p class="lead">My son and I went to the Melbourne Motor Show 2026 on opening day, and it turned out to be an excellent outing. We spent around three hours exploring the full showcase at the convention centre and saw everything from supercars and Fast &amp; Furious vehicles to classic luxury cars, custom builds, and some genuinely memorable displays.</p>
+        <p class="lead">What made it so enjoyable was the variety. It never felt repetitive. There was always something different to stop for, photograph, and talk about as we moved through the event.</p>
+        <div class="quick-links">
+          <a class="button" href="#highlights">See the highlights</a>
+          <a class="button secondary" href="#tips">Tips for visiting</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <section class="section-card">
+        <div class="label">Opening day experience</div>
+        <h2>Why the day was worth it</h2>
+        <p>The Melbourne Motor Show had a really good mix of past, present, and future. One moment we were looking at a matte black Lamborghini, and the next we were standing in front of a movie-style muscle car, a lowrider, or a classic Rolls-Royce. That variety made the whole event feel worthwhile from start to finish.</p>
+        <p>It was also the kind of outing that worked well as a father-and-son day. We were walking, talking, comparing favourites, taking photos, and just enjoying the atmosphere together. It was simple, but very memorable.</p>
+        <div class="quote-box">
+          This was one of those outings where the event itself was excellent, but sharing the experience together made it even better.
+        </div>
+      </section>
+
+		<section class="section-card">
+  <div class="label">Inspired by the show</div>
+  <h2>Something this got me thinking about</h2>
+
+  <p>
+    Seeing these cars together like this made me realise how much they can shape the feel of an event.
+    It’s not just about the car itself — it’s the atmosphere it creates.
+  </p>
+
+  <p>
+    It got me thinking that experiences like this don’t need to be limited to large public events.
+    They could also be part of smaller, more personal occasions.
+  </p>
+
+  <p>
+    Whether it’s a birthday, a school formal, or a corporate event,
+    a single standout vehicle can completely change the experience.
+  </p>
+
+  <p class="muted">
+    I’m currently exploring whether I can help connect people in Melbourne
+    with similar event experiences.
+  </p>
+</section>
+		
+<section class="section-card">
+  <div class="label">Possibilities</div>
+  <h2>Types of Experiences</h2>
+
+  <ul>
+    <li>Supercar arrivals or displays</li>
+    <li>Classic and vintage car experiences</li>
+    <li>Muscle and themed vehicles</li>
+    <li>Formal or special event car hire</li>
+  </ul>
+
+
+</section>
+		
+      <section id="highlights" class="section-card">
+        <div class="label">Hero display</div>
+        <h2>The car that made the best first impression</h2>
+        <div class="photo-card">
+          <img src="images/motor-show-hero-lamborghini-black.webp" alt="Matte black Lamborghini at Melbourne Motor Show 2026">
+          <p>The matte black Lamborghini was the right hero image for this page. It had a sharp, aggressive look and immediately captured the premium feel of the event.</p>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <div class="label">Supercars and modern performance</div>
+        <h2>Standout performance cars</h2>
+        <p>The modern performance section had some of the most visually striking vehicles of the day. These were the cars that immediately drew attention because of their shape, colour, stance, and sheer presence.</p>
+
+        <div class="image-grid two-col">
+          <div class="photo-card">
+            <img src="images/motor-show-black-dodge-challenger-red-interior.webp" alt="Black Dodge Challenger with red interior at Melbourne Motor Show 2026">
+            <p>This black muscle car had serious presence, and the red interior gave it even more character.</p>
+          </div>
+
+          <div class="photo-card">
+            <img src="images/motor-show-pink-widebody-toyota-86.webp" alt="Pink widebody Toyota 86 at Melbourne Motor Show 2026">
+            <p>One of the boldest cars at the show, this pink custom build stood out straight away.</p>
+          </div>
+
+          <div class="photo-card">
+            <img src="images/motor-show-green-lamborghini.webp" alt="Green Lamborghini at Melbourne Motor Show 2026">
+            <p>This bright green Lamborghini brought a completely different energy to the floor.</p>
+          </div>
+
+          <div class="photo-card">
+            <img src="images/motor-show-black-mclaren-doors-up.webp" alt="Black McLaren with doors up at Melbourne Motor Show 2026">
+            <p>The black McLaren with its doors up was another major standout and looked fantastic on display.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <div class="label">Movie car section</div>
+        <h2>Fast &amp; Furious highlights</h2>
+        <p>For us, the Fast &amp; Furious vehicles were one of the best parts of the whole show. Seeing movie-style cars up close added another layer of excitement and made this section feel especially fun and memorable.</p>
+
+        <div class="image-grid two-col">
+          <div class="photo-card">
+            <img src="images/motor-show-fast-furious-toyota-supra-orange.webp" alt="Orange Toyota Supra Fast and Furious style car at Melbourne Motor Show 2026">
+            <p>This orange Toyota Supra-style display was one of the most instantly recognisable cars of the day.</p>
+          </div>
+
+          <div class="photo-card">
+            <img src="images/motor-show-fast-furious-mitsubishi-eclipse-green.webp" alt="Green Mitsubishi Eclipse Fast and Furious style car at Melbourne Motor Show 2026">
+            <p>The bright green Eclipse-style car looked fantastic under the lights and added real energy to the display.</p>
+          </div>
+
+          <div class="photo-card">
+            <img src="images/motor-show-fast-furious-nissan-skyline-r34.webp" alt="Blue and silver Nissan Skyline R34 Fast and Furious style car at Melbourne Motor Show 2026">
+            <p>This blue-and-silver Skyline was another highlight and added plenty of nostalgia for fans of the films.</p>
+          </div>
+
+          <div class="photo-card">
+            <img src="images/motor-show-fast-furious-dodge-charger-grey.webp" alt="Grey Dodge Charger Fast and Furious style car at Melbourne Motor Show 2026">
+            <p>The grey Dodge Charger-style build had a strong Dom Toretto feel and looked great in the garage-themed setup.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <div class="label">Classic and custom section</div>
+        <h2>Classic, vintage, and custom vehicles</h2>
+        <p>Another strength of the event was that it did not lean only toward modern exotics. There were elegant older vehicles, restored classics, lowriders, and unique custom builds that gave the whole show much more depth.</p>
+
+        <div class="image-grid two-col">
+          <div class="photo-card">
+            <img src="images/motor-show-ford-351gt-orange.webp" alt="Orange Ford 351 GT at Melbourne Motor Show 2026">
+            <p>This orange Ford 351 GT brought a strong muscle-car feel to the event.</p>
+          </div>
+
+          <div class="photo-card">
+            <img src="images/motor-show-red-white-lowrider-chevy.webp" alt="Red and white lowrider Chevy at Melbourne Motor Show 2026">
+            <p>The red-and-white lowrider was full of personality and craftsmanship.</p>
+          </div>
+
+          <div class="photo-card">
+            <img src="images/motor-show-silver-rolls-royce-classic.webp" alt="Silver classic Rolls-Royce at Melbourne Motor Show 2026">
+            <p>This silver Rolls-Royce had a quieter elegance that balanced the louder performance cars nicely.</p>
+          </div>
+
+          <div class="photo-card">
+            <img src="images/motor-show-white-rolls-royce.webp" alt="White Rolls-Royce at Melbourne Motor Show 2026">
+            <p>The white Rolls-Royce added prestige and felt like one of the more refined displays at the show.</p>
+          </div>
+
+          <div class="photo-card">
+            <img src="images/motor-show-black-cream-vintage-rolls-royce.webp" alt="Black and cream vintage Rolls-Royce at Melbourne Motor Show 2026">
+            <p>This black-and-cream vintage luxury car stood out for its old-world style and detail.</p>
+          </div>
+
+          <div class="photo-card">
+            <img src="images/motor-show-gold-custom-hotrod.webp" alt="Gold custom hotrod at Melbourne Motor Show 2026">
+            <p>This gold custom build added even more variety and was one of the more unusual displays we saw.</p>
+          </div>
+        </div>
+      </section>
+
+	
+		
+      <section class="section-card">
+        <div class="label">Reflections</div>
+        <h2>Why it worked so well as a father-and-son outing</h2>
+        <p>From a Life Built Well perspective, this was exactly the kind of outing worth making time for. It was shared, interesting, active, and built around a real experience rather than routine. Days like this do not need to be complicated to be worthwhile. Sometimes a good outing is simply one where you both leave saying, “That was excellent.”</p>
+        <p>That is one reason I think real experiences matter. They create memories naturally, give you something to talk about, and often leave you with photos and moments worth keeping.</p>
+      </section>
+
+      <section id="tips" class="section-card">
+        <div class="label">Helpful notes</div>
+        <h2>Tips if you go to the Melbourne Motor Show</h2>
+        <ul>
+          <li>Allow at least two to three hours if you want to see the event properly.</li>
+          <li>Have your phone or camera ready because there are plenty of photo-worthy vehicles throughout.</li>
+          <li>Do not rush past the classic section, because some of the most memorable cars are there.</li>
+          <li>Spend time in the themed movie display areas because they add a lot to the atmosphere.</li>
+          <li>Wear comfortable shoes because there is enough walking and stopping to make it worthwhile.</li>
+        </ul>
+        <p class="mini-note">Our honest view: yes, it was definitely worth going.</p>
+      </section>
+
+      <section class="section-card">
+        <div class="label">Atmosphere</div>
+        <h2>A quick look at the show as we were leaving</h2>
+        <p>I also took a short video right near the end of our visit. It helps capture some of the crowd energy and feel of the event in a way that still photos cannot quite do on their own.</p>
+        <div class="video-wrap">
+          <video controls preload="metadata">
+            <source src="images/motor-show-exit-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <div class="label">Final thoughts</div>
+        <h2>A genuinely worthwhile day out</h2>
+        <p>I am really glad we went on opening day. The Melbourne Motor Show 2026 gave us a full mix of supercars, movie vehicles, classics, luxury cars, and custom builds, and that variety made the whole event feel worthwhile from start to finish.</p>
+        <p>This is also exactly the kind of page that suits Life Built Well: a real outing, honestly enjoyed, with original photos and a genuine experience behind it.</p>
+        <p class="mini-note">Note: All photos and the short video on this page were taken during our visit to the Melbourne Motor Show 2026.</p>
+      </section>
+		
+	<section class="section-card">
+  <div class="label">Enquiries</div>
+  <h2>Enquire About an Event</h2>
+
+  <p>
+    If you're planning something and like the idea of including a car experience,
+    feel free to reach out.
+  </p>
+
+  <p class="muted">
+    At this stage I’m simply exploring options and helping point people in the right direction.
+  </p>
+
+  <p>
+    <a class="button" href="mailto:contact@lifebuiltwell.com?subject=Motor%20Show%20Event%20Enquiry">
+      Send an Enquiry
+    </a>
+  </p>
+ </section>
+	
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p class="footer-title">LifeBuiltWell</p>
+      <p class="muted">Foundations for a steady life: food, movement, and faith.</p>
+
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </div>
+
+      <p class="tiny">© <span id="year"></span> LifeBuiltWell. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
