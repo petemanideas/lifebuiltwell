@@ -1,57 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://lifebuiltwell.com/index.html</loc>
-  <lastmod>2026-03-01T09:49:40+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://lifebuiltwell.com/eat-well.html</loc>
-  <lastmod>2026-03-01T09:49:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://lifebuiltwell.com/move-well.html</loc>
-  <lastmod>2026-03-01T09:49:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://lifebuiltwell.com/live-grounded.html</loc>
-  <lastmod>2026-03-01T09:49:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://lifebuiltwell.com/start-here.html</loc>
-  <lastmod>2026-03-01T09:49:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://lifebuiltwell.com/about.html</loc>
-  <lastmod>2026-03-01T09:49:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://lifebuiltwell.com/privacy.html</loc>
-  <lastmod>2026-03-01T09:49:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://lifebuiltwell.com/contact.html</loc>
-  <lastmod>2026-03-01T09:49:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://lifebuiltwell.com/eat-well-meaning.html</loc>
-  <lastmod>2026-03-01T09:49:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://lifebuiltwell.com/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://lifebuiltwell.com/start-here.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://lifebuiltwell.com/eat-well.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://lifebuiltwell.com/move-well.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://lifebuiltwell.com/live-grounded.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://lifebuiltwell.com/days-out.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://lifebuiltwell.com/morning-routine.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://lifebuiltwell.com/10-simple-healthy-meals-i-actually-eat.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://lifebuiltwell.com/simple-healthy-breakfast-ideas.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://lifebuiltwell.com/eat-well-meaning.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://lifebuiltwell.com/simple-weekly-movement-plan.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://lifebuiltwell.com/quiet-time-devotions.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://lifebuiltwell.com/bible-verses-for-peace.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://lifebuiltwell.com/sovereign-hill.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://lifebuiltwell.com/motor-show.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://lifebuiltwell.com/about.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://lifebuiltwell.com/contact.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://lifebuiltwell.com/privacy.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.30</priority>
+  </url>
 </urlset>
